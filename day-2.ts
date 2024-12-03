@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 
 
-const intput = fs.readFileSync('input-day2.txt', 'utf-8');
+const reportData = fs.readFileSync('input-day2.txt', 'utf-8').split('\n');
 
-console.log(intput);
+let safeReportCounts = 0;
+
+reportData.forEach(report => {
+    const levels = report.split('  ');
+
+});
