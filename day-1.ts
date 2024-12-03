@@ -999,6 +999,7 @@ const input = `37033   48086
 19173   20622
 12964   56430`;
 
+//part one
 const lines = input.split('\n')
     .map(item => item.split(' '))
     .map(item => item.filter(subItem => subItem !== ''))
@@ -1017,3 +1018,19 @@ for (let i = 0; i < left.length; i++) {
 }
 
 console.log(result);
+
+// part 2
+
+let resultParTwo = 0;
+
+left.forEach(item => {
+    let counter = 0;
+    right.forEach(item2 => {
+        if (item2 === item) {
+            counter++;
+        }
+    });
+    resultParTwo = resultParTwo + (item * counter);
+});
+
+console.log(resultParTwo);
