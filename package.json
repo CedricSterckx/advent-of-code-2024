@@ -5,8 +5,8 @@
     "typescript": "^5.7.2"
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node day-2.ts",
     "build": "tsc",
-    "dev": "ts-node index.ts"
+    "dev": "ts-node day-2.ts"
   }
 }
